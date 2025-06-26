@@ -71,7 +71,7 @@ export function FeedbackForm({ type }: FeedbackFormProps) {
         setIsLoading(true);
 
         try {
-            const response = await fetch('https://api.crisper.food', {
+            const response = await fetch('https://api.crisper.food/api/Feedback', {
 
 
                 method: "POST",
