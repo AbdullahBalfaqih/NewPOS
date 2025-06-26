@@ -1,0 +1,127 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تعريف الألوان كـ CSS variables */
+@layer base {
+    :root {
+        --background: 60 56% 91%;
+        --foreground: 27 49% 15%;
+        --card: 60 56% 91%;
+        --card-foreground: 27 49% 15%;
+        --popover: 60 50% 95%;
+        --popover-foreground: 27 49% 15%;
+        --primary: 27 11% 42%;
+        --primary-foreground: 60 50% 95%;
+        --secondary: 27 15% 60%;
+        --secondary-foreground: 60 50% 95%;
+        --muted: 60 30% 85%;
+        --muted-foreground: 27 20% 35%;
+        --accent: 29 62% 40%;
+        --accent-foreground: 60 50% 95%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 27 15% 70%;
+        --input: 27 15% 80%;
+        --ring: 29 62% 40%;
+        --radius: 0.5rem;
+        --chart-1: 29 62% 40%;
+        --chart-2: 27 11% 42%;
+        --chart-3: 30 50% 55%;
+        --chart-4: 25 30% 50%;
+        --chart-5: 60 40% 60%;
+        --sidebar-background: 55 40% 88%;
+        --sidebar-foreground: 27 49% 15%;
+        --sidebar-primary: 29 62% 40%;
+        --sidebar-primary-foreground: 60 50% 95%;
+        --sidebar-accent: 27 11% 42%;
+        --sidebar-accent-foreground: 60 50% 95%;
+        --sidebar-border: 27 15% 70%;
+        --sidebar-ring: 29 62% 40%;
+    }
+
+    .dark {
+        --background: 27 49% 15%;
+        --foreground: 60 56% 91%;
+        --card: 27 45% 20%;
+        --card-foreground: 60 56% 91%;
+        --popover: 27 40% 18%;
+        --popover-foreground: 60 56% 91%;
+        --primary: 29 62% 40%;
+        --primary-foreground: 60 50% 95%;
+        --secondary: 27 30% 30%;
+        --secondary-foreground: 60 50% 95%;
+        --muted: 27 25% 25%;
+        --muted-foreground: 60 30% 80%;
+        --accent: 27 11% 42%;
+        --accent-foreground: 60 50% 95%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 27 30% 35%;
+        --input: 27 30% 30%;
+        --ring: 29 62% 40%;
+        --chart-1: 29 62% 40%;
+        --chart-2: 27 11% 42%;
+        --chart-3: 30 50% 55%;
+        --chart-4: 25 30% 50%;
+        --chart-5: 60 40% 60%;
+        --sidebar-background: 27 40% 12%;
+        --sidebar-foreground: 60 56% 91%;
+        --sidebar-primary: 29 62% 40%;
+        --sidebar-primary-foreground: 60 50% 95%;
+        --sidebar-accent: 27 11% 42%;
+        --sidebar-accent-foreground: 60 50% 95%;
+        --sidebar-border: 27 30% 35%;
+        --sidebar-ring: 29 62% 40%;
+    }
+}
+
+/* تطبيق CSS مباشرة */
+@layer base {
+    * {
+        border-color: hsl(var(--border));
+    }
+
+    body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+        font-family: 'Almarai', sans-serif;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    .font-body {
+        font-family: 'Almarai', sans-serif;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Almarai', sans-serif;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.75rem;
+    }
+
+    h6 {
+        font-size: 1.5rem;
+    }
+}
