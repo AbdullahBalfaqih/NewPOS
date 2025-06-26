@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // قاعدة الرابط من .env.local
-const DOTNET_API_BASE_URL = 'http://localhost:5086';
+const DOTNET_API_BASE_URL = 'https://api.crisper.food';
 
 
 export async function POST(request: NextRequest) {

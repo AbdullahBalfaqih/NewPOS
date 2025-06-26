@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const DOTNET_API_BASE_URL = 'http://localhost:5086';
+const DOTNET_API_BASE_URL = 'https://api.crisper.food';
+
 
 export async function POST(req: NextRequest) {
     try {
